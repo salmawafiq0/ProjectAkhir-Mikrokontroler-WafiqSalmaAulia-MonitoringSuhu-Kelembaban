@@ -1,7 +1,7 @@
-# Sistem Monitoring Suhu dan Kelembaban Ruangan Ujian
+# Sistem Monitoring Suhu dan Kelembaban Ruangan Ujian (Topik Smart Transportation & Parking - No. 49)
 
 Project Akhir Mata Kuliah Sistem Mikrokontroler
-Departemen Informatika – Universitas Teknologi Bandung
+Teknik Informatika – Universitas Teknologi Bandung
 
 - **Nama:** Wafiq Salma Aulia
 - **NIM:** 23552011427
