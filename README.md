@@ -28,7 +28,7 @@ ambang batas nyaman.
 
 ## Tautan
 - Wokwi: https://wokwi.com/projects/468433544845045761
-- YouTube: [tempel link video YouTube Anda]
+- YouTube: https://youtu.be/h8KMHGTJVe0?si=wtGOQksuqrUaMuCW
 
 ## Code
 - Source code (Sketch.ino) ada pada file yang sudah saya lampirkan, dengan nama file " monitoring_suhu_kelembaban_ruangan_ujian.ino "
