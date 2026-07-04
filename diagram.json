@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "author": "Mahasiswa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht22", "top": -80, "left": 200, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -160, "left": -260, "attrs": { "pins": "i2c" } },
+    { "type": "wokwi-led", "id": "led_hijau", "top": 100, "left": 250, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led_merah", "top": 130, "left": 250, "attrs": { "color": "red" } },
+    { "type": "wokwi-buzzer", "id": "buzzer1", "top": 160, "left": 250, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r1", "top": 100, "left": 300, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": 130, "left": 300, "attrs": { "value": "220" } },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 200, "left": 250, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:D15", "dht22:SDA", "black", [] ],
+    [ "esp:3V3", "dht22:VCC", "red", [] ],
+    [ "esp:GND.1", "dht22:GND", "black", [] ],
+
+    [ "esp:D21", "lcd1:SDA", "green", [] ],
+    [ "esp:D22", "lcd1:SCL", "yellow", [] ],
+    [ "esp:3V3", "lcd1:VCC", "red", [] ],
+    [ "esp:GND.1", "lcd1:GND", "black", [] ],
+
+    [ "esp:D2", "r1:1", "green", [] ],
+    [ "r1:2", "led_hijau:A", "green", [] ],
+    [ "led_hijau:C", "esp:GND.2", "black", [] ],
+
+    [ "esp:D4", "r2:1", "red", [] ],
+    [ "r2:2", "led_merah:A", "red", [] ],
+    [ "led_merah:C", "esp:GND.2", "black", [] ],
+
+    [ "esp:D5", "buzzer1:1", "orange", [] ],
+    [ "buzzer1:2", "esp:GND.2", "black", [] ],
+
+    [ "esp:D18", "relay1:IN", "blue", [] ],
+    [ "esp:5V", "relay1:VCC", "red", [] ],
+    [ "esp:GND.2", "relay1:GND", "black", [] ]
+  ],
+  "dependencies": {}
+}
